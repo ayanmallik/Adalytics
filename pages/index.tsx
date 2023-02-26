@@ -1,4 +1,12 @@
-import { useState, useEffect } from 'react';
+import {
+  useState,
+  useEffect,
+  JSXElementConstructor,
+  Key,
+  ReactElement,
+  ReactFragment,
+  ReactPortal,
+} from 'react';
 import { BrowserWallet } from '@martifylabs/mesh';
 import { useWallet } from '@martifylabs/mesh-react';
 import logo from '../public/logo.png';
@@ -131,11 +139,35 @@ export default function Home() {
           </p>
           <p style={{ fontWeight: 'bold' }}>Balance:</p>
           <ul style={{ listStyle: 'none', paddingLeft: '0' }}>
-            {everything.balance.map((item, index) => (
-              <li key={index}>
-                Unit: {item.unit}, Quantity: {item.quantity}
-              </li>
-            ))}
+            {everything.balance.map(
+              (
+                item: {
+                  unit:
+                    | string
+                    | number
+                    | boolean
+                    | ReactElement<any, string | JSXElementConstructor<any>>
+                    | ReactFragment
+                    | ReactPortal
+                    | null
+                    | undefined;
+                  quantity:
+                    | string
+                    | number
+                    | boolean
+                    | ReactElement<any, string | JSXElementConstructor<any>>
+                    | ReactFragment
+                    | ReactPortal
+                    | null
+                    | undefined;
+                },
+                index: Key | null | undefined
+              ) => (
+                <li key={index}>
+                  Unit: {item.unit}, Quantity: {item.quantity}
+                </li>
+              )
+            )}
           </ul>
           <p style={{ fontWeight: 'bold' }}>Lovelace: {everything.lovelace}</p>
           <p style={{ fontWeight: 'bold' }}>

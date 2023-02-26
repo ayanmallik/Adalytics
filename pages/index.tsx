@@ -45,9 +45,7 @@ export default function Home() {
   const connectWallet = async (walletName: string) => {
     try {
       await connect(walletName);
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
 
   const LoadingSpinner = () => {

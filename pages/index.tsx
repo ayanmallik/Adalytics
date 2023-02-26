@@ -13,7 +13,7 @@ import logo from '../public/logo.png';
 export default function Home() {
   const { connect, connected, disconnect, wallet } = useWallet();
   const [everything, setEverything] = useState<any>({});
-
+  // sf
   useEffect(() => {
     const getTotalValue = async () => {
       if (connected) {

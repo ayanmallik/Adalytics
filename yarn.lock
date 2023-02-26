@@ -2302,6 +2302,11 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
 
+yadi.css@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/yadi.css/-/yadi.css-0.0.4.tgz#e70ff22bf5e1dc30c372c410d1a9054a4bf2c86c"
+  integrity sha512-OkG0FQRT2T6I6+vt8qSjn1y9UvLU1Qlxx1nAEkKIyYi8BS0WbdqRON4U4NDcVy6n3OS3wO1UeN4grDaZdCpSJQ==
+
 yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
